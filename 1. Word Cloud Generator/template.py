@@ -13,11 +13,11 @@ list_of_files = [
     f"{project_name}/src/__init__.py",
     f"{project_name}/src/main.py",
     f"{project_name}/src/preprocessing.py",
-    f"{project_name}/src/wordcloud_generator.py",
+    f"{project_name}/src/tokenization.py",
     f"{project_name}/artifacts/__init__.py",
-    f"{project_name}/output/__init__.py",
+    f"{project_name}/howTouse/__init__.py",
     f"{project_name}/research/trials.ipynb",
-    f"{project_name}/StreamLit/app.py",
+    f"{project_name}/app.py",
     f"{project_name}/requirements.txt",
     f"{project_name}/README.md"
 ]
