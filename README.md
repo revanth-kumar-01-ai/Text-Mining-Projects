@@ -26,3 +26,7 @@ A simple tool for cleaning and processing text data, making it ready for NLP tas
 #### 5️⃣ **Stop Words Removal** – Eliminate common words like 'the', 'is', and 'and'. 🛑
 #### 6️⃣ **Lemmatization / Stemming** – Reduce words to their base form. 🌱
 #### 7️⃣ **Text Normalization** – Standardize text format for better analysis. 🔍
+
+### **3. TF-IDF (Term Frequency-Inverse Document Frequency) 📊🔍**  
+
+**A numerical statistic used to identify important words in a document by measuring their relevance based on frequency and uniqueness across multiple documents.** 🚀
