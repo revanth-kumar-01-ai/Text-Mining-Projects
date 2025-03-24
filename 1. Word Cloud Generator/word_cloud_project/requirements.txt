@@ -1,0 +1,7 @@
+streamlit
+matplotlib
+wordcloud
+beautifulsoup4
+requests
+nltk
+spacy
