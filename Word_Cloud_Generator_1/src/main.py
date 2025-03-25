@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-from src.preprocessing import preprocessingTextData
-from src.tokenization import uniTokenization, biGramTokenization
+from Word_Cloud_Generator_1.src.tokenization import uniTokenization, biGramTokenization
+from Word_Cloud_Generator_1.src.preprocessing import preprocessingTextData
 
 def scrape_and_process_text(url):
     try:

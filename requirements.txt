@@ -5,3 +5,5 @@ beautifulsoup4
 requests
 nltk
 spacy
+scikit-learn
+pandas

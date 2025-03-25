@@ -1,8 +1,8 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
+from Word_Cloud_Generator_1.src.main import scrape_and_process_text
 
-from src.main import scrape_and_process_text
 
 # Function to generate and display unigram word cloud
 def singleGramVisual(tokens):
@@ -59,13 +59,10 @@ if st.button("Submit"):
 # Display "How to Use" section only if submission has NOT occurred
 if not st.session_state.submitted:
     st.title("How to Use")
-    st.image("../word_cloud_project/howTouse/one.png", caption="Example Word Cloud 1", use_container_width=True)
-    st.image("../word_cloud_project/howTouse/two.png", caption="Example Word Cloud 1", use_container_width=True)
-    st.image("../word_cloud_project/howTouse/three.png", caption="Example Word Cloud 1", use_container_width=True)
-    st.image("../word_cloud_project/howTouse/four.png", caption="Example Word Cloud 1", use_container_width=True)
-    st.image("../word_cloud_project/howTouse/five.png", caption="Example Word Cloud 1", use_container_width=True)
+    st.image("Word_Cloud_Generator_1/howTouse/one.png", caption="Example Word Cloud 1", use_container_width=True)
+    st.image("Word_Cloud_Generator_1/howTouse/two.png", caption="Example Word Cloud 1", use_container_width=True)
+    st.image("Word_Cloud_Generator_1/howTouse/three.png", caption="Example Word Cloud 1", use_container_width=True)
+    st.image("Word_Cloud_Generator_1/howTouse/four.png", caption="Example Word Cloud 1", use_container_width=True)
+    st.image("Word_Cloud_Generator_1/howTouse/five.png", caption="Example Word Cloud 1", use_container_width=True)
    
- 
-
-
-
+   

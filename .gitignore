@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 
-1. Word Cloud Generator/word_cloud_project/artifacts/*
+Word_Cloud_Generator_1/artifacts/*
