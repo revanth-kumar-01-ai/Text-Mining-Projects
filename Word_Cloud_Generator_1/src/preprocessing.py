@@ -9,6 +9,7 @@ from unidecode import unidecode
 from textblob import TextBlob
 from nltk.tokenize import sent_tokenize
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+import subprocess
 
 def normalize_text(text):
     text = contractions.fix(text)
@@ -35,7 +36,12 @@ def preprocessingTextData(textData):
     filter_sentences = [" ".join([word for word in sentence.split() if word not in stop_words]) for sentence in punctuation_free_sentences]
 
     # Step six Lemmatization
-    nlp = spacy.load('en_core_web_sm')
+    try:
+         nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+        nlp = spacy.load("en_core_web_sm")
+    
     lemmatized_sentences = [" ".join([token.lemma_ for token in nlp(sentence)]) for sentence in filter_sentences]
 
     #  Step 7: Text Normalization

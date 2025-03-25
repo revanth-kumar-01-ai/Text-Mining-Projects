@@ -10,3 +10,4 @@ pandas
 contractions
 unidecode 
 textblob
+subprocess
