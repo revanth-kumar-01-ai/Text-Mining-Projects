@@ -32,14 +32,14 @@ def preprocessingTextData(textData):
     stop_words = set(ENGLISH_STOP_WORDS)  # ✅ Using set() for efficiency
     filtered_sentences = [" ".join([word for word in sentence.split() if word not in stop_words]) for sentence in punctuation_free_sentences]
 
-    # # Step 6: Lemmatization
-    # try:
-    #     nlp = spacy.load("en_core_web_sm")
-    # except OSError:
-    #     subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-    #     nlp = spacy.load("en_core_web_sm")
+    # Step 6: Lemmatization
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+        nlp = spacy.load("en_core_web_sm")
 
-    # lemmatized_sentences = [" ".join([token.lemma_ for token in nlp(sentence)]) for sentence in filtered_sentences]
+    lemmatized_sentences = [" ".join([token.lemma_ for token in nlp(sentence)]) for sentence in filtered_sentences]
 
     # Step 7: Text Normalization
     normalized_sentences = [normalize_text(sentence) for sentence in filtered_sentences]
