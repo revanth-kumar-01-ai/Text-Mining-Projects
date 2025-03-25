@@ -28,12 +28,16 @@ TFFrequency = st.Page(
     icon = '🔍' 
 )
 
-
+sentimentPrediction = st.Page(
+    page = "ZStreamLit/ViewPage/Sentiment.py", 
+    title = "Sentiment", 
+    icon = '😊' 
+)
 
 st.logo('ZStreamLit/assets/logo.png', size = 'large')
 
 pg = st.navigation({
-    config.PROJECT_NAME:[home, WordCloud, TextPreprocessing, TFFrequency]
+    config.PROJECT_NAME:[home, WordCloud, TextPreprocessing, TFFrequency, sentimentPrediction]
 })
 
 pg.run()
