@@ -8,3 +8,5 @@ spacy
 scikit-learn
 pandas
 contractions
+unidecode 
+textblob
