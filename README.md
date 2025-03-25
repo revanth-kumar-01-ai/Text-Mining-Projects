@@ -30,3 +30,7 @@ A simple tool for cleaning and processing text data, making it ready for NLP tas
 ### **3. TF-IDF (Term Frequency-Inverse Document Frequency) 📊🔍**  
 
 **A numerical statistic used to identify important words in a document by measuring their relevance based on frequency and uniqueness across multiple documents.** 🚀
+
+### **Sentiment Prediction Using Naïve Bayes**  
+
+A probabilistic model that classifies text as positive or negative using the IMDB dataset. 🚀
